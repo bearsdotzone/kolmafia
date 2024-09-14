@@ -3012,12 +3012,12 @@ public abstract class KoLCharacter {
    * Hardcore players cannot).
    */
   public static final boolean canInteract() {
-    return CharPaneRequest.canInteract();
+    return false;
   }
 
   /** Returns whether or not the character is currently in hardcore. */
   public static final boolean isHardcore() {
-    return KoLCharacter.isHardcore;
+    return true;
   }
 
   /** Accessor method which sets whether or not the player is currently in hardcore. */
@@ -3030,7 +3030,7 @@ public abstract class KoLCharacter {
 
   /** Returns whether or not the character is currently in casual. */
   public static final boolean isCasual() {
-    return KoLCharacter.isCasual;
+    return false;
   }
 
   /** Accessor method which sets whether or not the player is currently in casual. */
